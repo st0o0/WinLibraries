@@ -43,7 +43,7 @@ namespace InputBoxLibrary.WPF.Messaging
         public InputBoxWindow(string messageBoxText, string caption, string url, MessageBoxButton button) : this()
         {
             SetValues(messageBoxText, caption, url, button);
-            OpenBrowser("opera", url);
+            OpenBrowser("firefox", url);
         }
 
         public InputBoxWindow(string messageBoxText, string caption, string url, MessageBoxButton button, PrimaryColor primary, SecondaryColor secondary, IBaseTheme theme) : this()
@@ -51,7 +51,7 @@ namespace InputBoxLibrary.WPF.Messaging
             theme ??= Theme.Dark;
             SetTheme(theme, primary, secondary);
             SetValues(messageBoxText, caption, url, button);
-            OpenBrowser("opera", url);
+            OpenBrowser("firefox", url);
         }
 
         private void SetTheme(IBaseTheme theme, PrimaryColor primaryColor = default, SecondaryColor secondaryColor = SecondaryColor.DeepPurple)
